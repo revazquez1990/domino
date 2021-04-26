@@ -1,0 +1,9 @@
+# Dependencies
+node_modules
+.env
+
+# production
+build
+
+# VS Code configuration
+.vscode

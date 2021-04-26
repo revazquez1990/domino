@@ -1,0 +1,22 @@
+[
+    {
+        "id" : 0,
+        "name" : "Rafael",
+        "fichas" : []
+    },
+    {
+        "id" : 1,
+        "name" : "Ernesto",
+        "fichas" : []
+    },
+    {
+        "id" : 2,
+        "name" : "Ramiro",
+        "fichas" : []
+    },
+    {
+        "id" : 3,
+        "name" : "Luis",
+        "fichas" : []
+    }
+]
