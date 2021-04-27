@@ -1,8 +1,8 @@
 class Juego {
 
-    constructor(puntos) {
-        jugadores = [];
-        puntosObjetivo = puntos;
+    constructor(players) {
+        jugadores = players;
+        puntosObjetivo = 200;
     }
 
     EmparejarJugadores(){
@@ -22,3 +22,5 @@ class Juego {
         }
     }
 }
+
+module.exports = {Juego};

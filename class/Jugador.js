@@ -15,3 +15,5 @@ class Jugador {
         this.name = name;
     }
 }
+
+module.exports = {Jugador};
