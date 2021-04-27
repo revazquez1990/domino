@@ -15,7 +15,7 @@ class Juego {
         primerEscogido.CodigoPareja = emparejamiento.codigoJugador;
         emparejamiento.CodigoPareja = primerEscogido.codigoJugador;
 
-        const ultimos = jugadores.FindAll(c => c.CodigoPareja == 0);
+        const ultimos = jugadores.FindAll(c => c.CodigoPareja === 0);
         if(ultimos.length == 2)
         {
             
