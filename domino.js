@@ -11,10 +11,10 @@ const crear = (nombre, index) => {
         nombre
     };
 
-    listadoPlayers.push(players);
+    listadoPlayers.push(player);
     console.log(listadoPlayers);
     guardarDB();
-    return players;
+    return player;
 }
 
 const guardarDB = () => {
