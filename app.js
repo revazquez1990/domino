@@ -33,10 +33,10 @@ function desplegarMenu(juego) {
 }
 
 const emparejar = (jugadores) => {
-    jugadores[0].codigoPareja = 2;
-    jugadores[1].codigoPareja = 1;
-    jugadores[2].codigoPareja = 4;
-    jugadores[3].codigoPareja = 3;
+    jugadores[0].codigoPareja = 3;
+    jugadores[1].codigoPareja = 4;
+    jugadores[2].codigoPareja = 1;
+    jugadores[3].codigoPareja = 2;
 
     return jugadores;
 }

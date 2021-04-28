@@ -25,15 +25,18 @@ class Ronda {
         if (this.jugadores.length > 4)
             throw new Exception("Hay mas jugadores, deben ser solo 4");
         this.jugadores.forEach((jugador, index) => {
-            while(this.jugadores[index].fichas.length < 7){
-                console.log(this.jugadores[index]);
-                const aleatorio = Math.round(getRandomArbitrary(0,this.fichas.length));
+            
+            while(this.jugadores[index].fichasJugador.length < 7){
+                const aleatorio = Math.floor(getRandomArbitrary(0,this.fichas.length));
                 this.jugadores[index].fichasJugador.push(this.fichas[aleatorio]);
                 this.fichas.splice(aleatorio,1);
-                console.log(jugador);
-                console.log(index);
             }
+            console.log(this.jugadores[index].fichasJugador);
         });
+    }
+
+    jugarRonda(){
+        
     }
 
     
