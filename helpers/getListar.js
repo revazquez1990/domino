@@ -18,9 +18,11 @@ const getListado = () => {
 
 const repartirFichas = () => {
     // buscar los participantes
-
+    getParticipantes();
+    return listPlayers;
 }
 
 module.exports = {
     getListado,
+    
 }

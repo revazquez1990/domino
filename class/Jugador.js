@@ -1,10 +1,11 @@
+const Ficha = require('./Ficha');
+
 class Jugador {
  
-    constructor(name, code, codigoPareja) {
+    constructor(name, code) {
         this.code = code;
         this.name = name;
-        this.fichaJugador = new Ficha();
-        this.codigoPareja = codigoPareja;
+        // this.fichaJugador = new Ficha();
     }
     
     get getName() {
@@ -16,4 +17,6 @@ class Jugador {
     }
 }
 
-module.exports = {Jugador};
+module.exports = {
+    Jugador
+};
