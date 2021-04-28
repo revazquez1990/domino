@@ -14,27 +14,29 @@ let listaNombres, numData = 1, estado = 1;
             codigo++;
             return arrJugadores;
         },[])
-        console.log(jugadores);
         estado ++;
-        const juego = new Juego(jugadores);
-        desplegarMenu();
+        const juego = new Juego(emparejar(jugadores));
+        desplegarMenu(juego);
     }
 });
 
-function desplegarMenu() {
+function desplegarMenu(juego) {
     process.stdout.write('Marque la opcion deseada \n');
     process.stdout.write('Opcion 1: Jugar \n');
     process.stdout.write('Opcion 2: Salir \n');
     
     process.stdin.on('data', function(data){
         if (data.toString().trim() === '1') {
-            const ronda = new Ronda(numData, listaNombres);
-            console.log(ronda.inicializarData());
+            juego.jugar();
         }else process.exit();
     });
 }
 
-function crearFichas(params) {
-    
-}
+const emparejar = (jugadores) => {
+    jugadores[0].codigoPareja = 2;
+    jugadores[1].codigoPareja = 1;
+    jugadores[2].codigoPareja = 4;
+    jugadores[3].codigoPareja = 3;
 
+    return jugadores;
+}
